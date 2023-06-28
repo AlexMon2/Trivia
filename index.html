@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's play Trivia!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="title">Let's play Trivia!</h1>
+
+    <button id="instructions">Instructions</button><br>
+    <p class="rules hidden">
+        1.- Choose the difficulty. <br>
+        2.- Choose the category. To get questions from any category, don't specify a category. <br>
+        3.- Choose the type of answer. <br>
+        4.- You need to answer ten questions. <br>
+        Good luck!
+    </p>
+
+    <div class="container">
+        <div id="uno">
+            <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+            <option value="">Any Difficulty</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+            <button id="dificultad">Select</button>
+        </div>
+
+        <div id="dos">
+            <label for="category">Category:</label>
+        <select id="category">
+            <option value="">Any Category</option>
+            <option value="1">General Knowledge</option>
+            <option value="2">Entertainment: Books</option>
+            <option value="3">Entertainment: Film</option>
+            <option value="4">Entertainment: Music</option>
+            <option value="5">Entertainment: Musicals & Theatres</option>
+            <option value="6">Entertainment: Television</option>
+            <option value="7">Entertainment: Video Games</option>
+            <option value="8">Entertainment: Board Games</option>
+            <option value="9">Entertainment: Japanese Anime & Manga</option>
+            <option value="10">Entertainment: Cartoon & Animations</option>
+            <option value="11">Entertainment: Comics</option>
+            <option value="12">Science & Nature</option>
+            <option value="13">Science: Computers</option>
+            <option value="14">Science: Mathematics</option>
+            <option value="15">Science: Gadgets</option>
+            <option value="16">Mythology</option>
+            <option value="17">Sports</option>
+            <option value="18">Geography</option>
+            <option value="19">History</option>
+            <option value="20">Politics</option>
+            <option value="21">Art</option>
+            <option value="22">Celebrities</option>
+            <option value="23">Animals</option>
+            <option value="24">Vehicles</option>
+        </select>
+            <button id="categoria">Select</button>
+        </div>
+
+        <div id="tres">
+            <label for="type">Type:</label>
+        <select id="type">
+            <option value="">Any Type</option>
+            <option value="Choice">Multiple Choice</option>
+            <option value="Medium">True / False</option>
+        </select>
+            <button id="tipo">Select</button>
+        </div>
+    </div>
+
+    <button id="start">START</button>
+
+    <div id="trivia"></div>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
